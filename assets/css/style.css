@@ -5,34 +5,20 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
     margin: auto;
 }
 
-body{
+body {
     background-color: #d9d9d9;
 }
 
-#app{
-    height: 100vh;
-    display: flex;
+i {
+    color: var(--boolz-primary);
 }
 
-.boolzapp{
-    width: 70vw;
-    height: 90vh;
-    margin: auto;
-    margin-top: 5vh;
-}
 
-.side_bar_top, .message_top{
-    height: 60px;
-}
-
-.side_bar_bottom, .message_bottom{
-    height: calc(100% - 60px);
-}
 /* #endregion common */
 
 /* #region utilities */
@@ -48,14 +34,39 @@ body{
 /* #endregion utilities */
 
 
+/* #region main */
+#app {
+    height: 100vh;
+    display: flex;
+}
+
+.boolzapp {
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.side_bar_top,
+.message_top {
+    height: 60px;
+    background-color: var(--boolz-primary-light);
+}
+
+.side_bar_bottom,
+.message_bottom {
+    height: calc(100% - 60px);
+}
+/* #endregion main */
+
 /* #region side_bar */
 
-.side_bar{
+.side_bar {
     width: 400px;
 }
 
-.side_bar img{
-    max-width: 50px;
+.side_bar img, .message_top img {
+    max-width: 40px;
     border-radius: 50%;
 }
 
@@ -63,45 +74,40 @@ body{
 
 /* #region messages */
 
-.messages{
+.messages {
     width: calc(100% - 400px);
 }
 
-.message_bottom{
+.message_bottom {
     background-image: url('../img/mine.jpg');
 }
+
 /* #endregion messages */
 
 
-
-
-
-
 /* #region debug */
-.debug #app{
-    background-color: #f0f0f0;
+.debug #app {
+    background-color: white;
     border: 1px solid black;
 }
 
-.side_bar_top{
-    border:1px solid green;
+.side_bar_top {
+    border: 1px solid green;
 }
 
-.side_bar_bottom{
-    border:1px solid orangered;
+.side_bar_bottom {
+    border: 1px solid orangered;
 }
 
-.message_top{
+.message_top {
     border: 1px solid blue;
 }
 
-.message_bottom{
+.message_bottom {
     border: 1px solid purple;
 }
 
-.side_bar img{
+.side_bar img, .message_top img {
     border: 1px solid red;
 }
-
-
 /* #endregion debug */
