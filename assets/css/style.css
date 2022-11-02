@@ -21,21 +21,22 @@ body{
     margin-top: 5vh;
 }
 
-.boolzapp_top{
-    height: 50px;
+.side_bar{
+    width: 400px;
 }
 
-.boolzapp_bottom{
-    height: calc(100% - 50px);
+.message{
+    width: calc(100% - 400px);
 }
 
-.boolzapp_side_bar{
-    width: 300px;
+.side_bar_top, .message_top{
+    height: 60px;
 }
 
-.boolzapp_message{
-    width: calc(100% - 300px);
+.side_bar_bottom, .message_bottom{
+    height: calc(100% - 60px);
 }
+
 
 
 
@@ -47,24 +48,24 @@ body{
 }
 
 .debug .boolzapp{
-    border: 1px solid black;
     background-color:pink;
 }
 
-
-.debug .boolzapp_top{
-    background-color: lightyellow;
-    border: 1px solid black;
+.side_bar_top{
+    border:1px solid green;
 }
 
-.debug .boolzapp_side_bar{
-    background-color: green;
-    border: 1px solid black;
+.side_bar_bottom{
+    border:1px solid yellow;
 }
 
-.debug .boolzapp_message{
-    background-color: lightblue;
-    border: 1px solid black;
+.message_top{
+    border: 1px solid blue;
 }
+
+.message_bottom{
+    border: 1px solid purple;
+}
+
 
 /* #endregion debug */
