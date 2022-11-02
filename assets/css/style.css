@@ -27,8 +27,10 @@ i {
     --boolz-dark: #000;
     --boolz-primary: #B1B1B1;
     --boolz-primary-light: #EAEAEA;
+    --boolz-primary-lighter: #FAFAFA;
     --boolz-secondary: #8EDAFC;
     --boolz-hope: #D5F9BA;
+    --boolz-dark-light: #D7DBD8;
 }
 
 /* #endregion utilities */
@@ -38,6 +40,8 @@ i {
 #app {
     height: 100vh;
     display: flex;
+    background-color: var(--boolz-dark-light);
+
 }
 
 .boolzapp {
@@ -63,11 +67,16 @@ i {
 
 .side_bar {
     width: 400px;
+    border-right: 1px solid var(--boolz-primary);
 }
 
 .side_bar img, .message_top img {
     max-width: 40px;
     border-radius: 50%;
+}
+
+.side_bar_bottom{
+    background-color: var(--boolz-light);
 }
 
 .notifiche{
@@ -88,6 +97,10 @@ i {
     color: var(--boolz-secondary);
     font-size: 1rem;
 }
+
+.search{
+    background-color: var(--boolz-primary-lighter);
+}
 /* #endregion side_bar */
 
 /* #region messages */
@@ -104,28 +117,9 @@ i {
 
 
 /* #region debug */
-.debug #app {
-    background-color: white;
-    border: 1px solid black;
-}
 
-.side_bar_top {
-    border: 1px solid green;
-}
 
-.side_bar_bottom {
-    border: 1px solid orangered;
-}
 
-.message_top {
-    border: 1px solid blue;
-}
 
-.message_bottom {
-    border: 1px solid purple;
-}
 
-.side_bar img, .message_top img {
-    border: 1px solid red;
-}
 /* #endregion debug */
