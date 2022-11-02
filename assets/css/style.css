@@ -70,6 +70,24 @@ i {
     border-radius: 50%;
 }
 
+.notifiche{
+    background-color: var(--boolz-secondary);
+    height: 70px;
+}
+
+.notifiche_desktop{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--boolz-light);
+    text-align: center;
+    line-height: 40px;
+}
+
+.notifiche_desktop i{
+    color: var(--boolz-secondary);
+    font-size: 1rem;
+}
 /* #endregion side_bar */
 
 /* #region messages */
