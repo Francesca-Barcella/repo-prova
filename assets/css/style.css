@@ -35,6 +35,19 @@ body{
 }
 /* #endregion common */
 
+/* #region utilities */
+:root {
+    --boolz-light: #fff;
+    --boolz-dark: #000;
+    --boolz-primary: #B1B1B1;
+    --boolz-primary-light: #EAEAEA;
+    --boolz-secondary: #8EDAFC;
+    --boolz-hope: #D5F9BA;
+}
+
+/* #endregion utilities */
+
+
 /* #region side_bar */
 
 .side_bar{
