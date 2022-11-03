@@ -122,18 +122,22 @@ i {
 
 .messages_bottom {
     background-image: url('../img/mine.jpg');
+    flex-direction: column;
+}
+
+.sent_message, .received_messsage{
+    border-radius: 0.5rem;
+    max-width: 400px;   
 }
 
 .sent_message{
-    width: calc(100% / 2 - 1rem);
     background-color: var(--boolz-hope);
-    border-radius: 0.5rem;
+    align-self: flex-end;
 }
 
 .received_messsage{
-    width: calc(100% / 2 - 1rem);
     background-color: var(--boolz-light);
-    border-radius: 0.5rem; 
+    align-self: flex-start; 
 }
 
 /* #endregion messages */

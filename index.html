@@ -21,14 +21,17 @@
             <!-- side_bar -->
             <div class="side_bar">
                 <!-- side_bar top -->
-                <div class="side_bar_top p-2">
-                    <img src="./assets/img/avatar_1.jpg" alt="">
-                    <span>nome utente</span>
-                    <nav-bar>
-                        <i class="fa-solid fa-circle-notch"></i>
-                        <i class="fa-solid fa-message"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </nav-bar>
+                <div class="side_bar_top p-2 d-flex justify-content-between">
+                    <div class="d-flex">
+                        <img src="./assets/img/avatar_1.jpg" alt="">
+                        <div>nome utente</div>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-solid fa-circle-notch mx-2"></i>
+                        <i class="fa-solid fa-message mx-2"></i>
+                        <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+                    </div>
                 </div>
                 <!-- side_bar bottom -->
                 <section class="side_bar_bottom">
@@ -51,16 +54,16 @@
                     </div>
                     <!-- side_bar contact -->
                     <div class="contacts">
-                            <div class="contact d-flex p-2" v-for="(contact) in contacts">
-                                <div class="avatar">
-                                    <img class="me-3" src="./assets/img/avatar_1.jpg" alt="">
-                                </div>
-                                <div class="contact_detalis">
-                                    <h5>{{contact.name}}</h5>
-                                    <span>messaggio inviato</span>
-                                </div>
-                                <span class="time_message">12:00</span>
+                        <div class="contact d-flex p-2" v-for="(contact, i) in contacts">
+                            <div class="avatar">
+                                <img class="me-3" src="./assets/img/avatar_1.jpg" alt="">
                             </div>
+                            <div class="contact_detalis">
+                                <h5>{{contact.name}}</h5>
+                                <span>messaggio inviato</span>
+                            </div>
+                            <span class="time_message">12:00</span>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -74,19 +77,21 @@
                         <h6>nome utente</h6>
                         <span>Ultimo accesso oggi alle</span>
                     </div>
-                    <nav-bar>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-paperclip"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </nav-bar>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass mx-2"></i>
+                        <i class="fa-solid fa-paperclip mx-2"></i>
+                        <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+                    </div>
                 </div>
                 <!-- messages_bottom -->
-                <div class="messages_bottom">
-                    <div class="sent_message m-2 p-2">messaggio spedito</div>
-                    <div class="received_messsage m-2 p-2">messaggio ricevuto</div>
+                <div class="messages_bottom d-flex">
+                    <div class="sent_message m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                    <div class="sent_message m-2 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus exercitationem amet earum aliquid sequi. Magnam, eaque!</div>
+                    <div class="received_messsage m-2 p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
                 </div>
             </div>
         </div>
+
     </div>
 
 
