@@ -103,6 +103,11 @@ i {
     height: 50px;
 }
 
+.contacts{
+    overflow-y: scroll;
+    height: calc(100vh - 280px);
+}
+
 .contact{
     height: 80px;
     border-bottom: 1px solid var(--boolz-primary-light);
