@@ -1,0 +1,170 @@
+/************************************ 
+MILESTONE 2 
+************************************/
+
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+i {
+    color: var(--boolz-primary);
+}
+
+.color_text{
+    color: var(--boolz-primary);
+}
+
+
+/* #endregion common */
+
+/* #region utilities */
+:root {
+    --boolz-light: #fff;
+    --boolz-dark: #000;
+    --boolz-primary: #B1B1B1;
+    --boolz-primary-light: #EAEAEA;
+    --boolz-primary-lighter: #FAFAFA;
+    --boolz-secondary: #8EDAFC;
+    --boolz-hope: #D5F9BA;
+    --boolz-dark-light: #D7DBD8;
+}
+
+/* #endregion utilities */
+
+
+/* #region main */
+#app {
+    height: 100vh;
+    display: flex;
+    background-color: var(--boolz-dark-light);
+
+}
+
+.boolzapp {
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.user,
+.active_chat {
+    height: 70px;
+    background-color: var(--boolz-primary-light);
+
+}
+
+.side_bar_bottom,
+.chat {
+    height: calc(100% - 70px);
+}
+/* #endregion main */
+
+/* #region side_bar */
+
+.side_bar {
+    width: 400px;
+    border-right: 1px solid var(--boolz-primary);
+}
+
+.side_bar img, .active_chat img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.side_bar_bottom{
+    background-color: var(--boolz-light);
+}
+
+.notifications{
+    background-color: var(--boolz-secondary);
+    height: 80px;
+}
+
+.desktop_notifications{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--boolz-light);
+    text-align: center;
+    line-height: 50px;
+}
+
+.desktop_notifications i{
+    color: var(--boolz-secondary);
+    font-size: 1.5rem;
+}
+
+.search{
+    background-color: var(--boolz-primary-lighter);
+    height: 50px;
+}
+
+.contacts{
+    overflow-y: auto;
+    height: calc(90vh - 200px);
+}
+
+.contact{
+    height: 80px;
+    border-bottom: 1px solid var(--boolz-primary-light);
+}
+
+.hover:hover{
+    cursor: pointer;
+}
+/* #endregion side_bar */
+
+/* #region messages */
+
+.messages {
+    width: calc(100% - 400px);
+}
+
+.chat {
+    background-image: url('../img/mine.jpg');
+    flex-direction: column;
+}
+
+.sent_message, .received_messsage{
+    border-radius: 0.5rem;
+    max-width: 400px;   
+}
+
+.sent_message{
+    background-color: var(--boolz-hope);
+    align-self: flex-end;
+}
+
+.received_messsage{
+    background-color: var(--boolz-light);
+    align-self: flex-start;
+}
+
+.chat_toolbar{
+    background-color: var(--boolz-primary-light);
+    
+}
+
+/* #endregion messages */
+
+
+/* #region debug */
+
+
+
+
+
+/* #endregion debug */
