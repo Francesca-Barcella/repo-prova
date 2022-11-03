@@ -52,13 +52,13 @@ i {
 }
 
 .side_bar_top,
-.message_top {
-    height: 60px;
+.messages_top {
+    height: 70px;
     background-color: var(--boolz-primary-light);
 }
 
 .side_bar_bottom,
-.message_bottom {
+.messages_bottom {
     height: calc(100% - 60px);
 }
 /* #endregion main */
@@ -70,8 +70,8 @@ i {
     border-right: 1px solid var(--boolz-primary);
 }
 
-.side_bar img, .message_top img {
-    max-width: 40px;
+.side_bar img, .messages_top img {
+    max-width: 50px;
     border-radius: 50%;
 }
 
@@ -79,27 +79,34 @@ i {
     background-color: var(--boolz-light);
 }
 
-.notifiche{
+.notifications{
     background-color: var(--boolz-secondary);
-    height: 70px;
+    height: 80px;
 }
 
-.notifiche_desktop{
-    width: 40px;
-    height: 40px;
+.desktop_notifications{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--boolz-light);
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
 }
 
-.notifiche_desktop i{
+.desktop_notifications i{
     color: var(--boolz-secondary);
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .search{
     background-color: var(--boolz-primary-lighter);
+    height: 50px;
+}
+
+.contact{
+    height: 80px;
+    border-bottom: 1px solid var(--boolz-primary-light);
+    border-top: 1px solid var(--boolz-primary-light);
 }
 /* #endregion side_bar */
 
@@ -109,7 +116,7 @@ i {
     width: calc(100% - 400px);
 }
 
-.message_bottom {
+.messages_bottom {
     background-image: url('../img/mine.jpg');
 }
 
