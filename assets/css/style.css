@@ -59,7 +59,7 @@ i {
 
 .side_bar_bottom,
 .messages_bottom {
-    height: calc(100% - 60px);
+    height: calc(100% - 70px);
 }
 /* #endregion main */
 
@@ -104,14 +104,13 @@ i {
 }
 
 .contacts{
-    overflow-y: scroll;
-    height: calc(100vh - 280px);
+    overflow-y: auto;
+    height: calc(90vh - 200px);
 }
 
 .contact{
     height: 80px;
     border-bottom: 1px solid var(--boolz-primary-light);
-    border-top: 1px solid var(--boolz-primary-light);
 }
 /* #endregion side_bar */
 
