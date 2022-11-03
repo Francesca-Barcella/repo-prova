@@ -1,5 +1,14 @@
 /************************************ 
-MILESTONE 2 
+MILESTONE 3 
+
+● #1 - Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando
+“enter” il testo viene aggiunto al thread sopra, come messaggio verde
+● #2 - Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà
+un “ok” come risposta, che apparirà dopo 1 secondo.
+
+- strumenti #1: v-model nell'input e key modifier(?) per tasto enter
+- strumenti #2: setTimeOut (1 sola volta)
+
 ************************************/
 const { createApp } = Vue
 
