@@ -54,7 +54,7 @@
                     </div>
                     <!-- contacts -->
                     <div class="contacts">
-                        <div class="contact d-flex justify-content-between p-2" v-for="(contact, index) in contacts" @click="changeActiveIndex">
+                        <div class="contact hover d-flex justify-content-between p-2" v-for="(contact, index) in contacts" @click="changeActiveIndex(index)">
                             <div class="avatar d-flex">
                                 <img class="me-3" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                 <div class="contact_detalis">

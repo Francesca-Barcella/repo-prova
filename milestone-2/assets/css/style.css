@@ -121,6 +121,10 @@ i {
     height: 80px;
     border-bottom: 1px solid var(--boolz-primary-light);
 }
+
+.hover:hover{
+    cursor: pointer;
+}
 /* #endregion side_bar */
 
 /* #region messages */

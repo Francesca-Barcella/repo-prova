@@ -179,7 +179,7 @@ createApp({
 
     methods: {
         changeActiveIndex(index) {
-            console.log('hai cliccato su un contatto'),
+            
             this.activeIndex = index
         }
 
