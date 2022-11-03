@@ -138,7 +138,12 @@ i {
 
 .received_messsage{
     background-color: var(--boolz-light);
-    align-self: flex-start; 
+    align-self: flex-start;
+}
+
+.chat_toolbar{
+    background-color: var(--boolz-primary-light);
+    
 }
 
 /* #endregion messages */

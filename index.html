@@ -22,11 +22,11 @@
             <section class="side_bar">
                 <!-- side_bar top -->
                 <div class="user p-2 d-flex justify-content-between">
-                    <div class="d-flex">
+                    <div class="d-flex align-items-center">
                         <img src="./assets/img/avatar_1.jpg" alt="" class="me-2">
                         <h6>nome utente</h6>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center">
                         <i class="fa-solid fa-circle-notch mx-2"></i>
                         <i class="fa-solid fa-message mx-2"></i>
                         <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
@@ -48,8 +48,8 @@
                     <div class="search">
                         <form class="d-flex" role="search">
                             <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <input class="form-control m-1 p-1" type="search" placeholder="Cerca o inizia una nuova chat"
-                                aria-label="Search">
+                            <input class="form-control m-1 p-1" type="search"
+                                placeholder="Cerca o inizia una nuova chat" aria-label="Search">
                         </form>
                     </div>
                     <!-- contacts -->
@@ -72,21 +72,34 @@
             <section class="messages">
                 <!-- TOP - active contact -->
                 <div class="active_chat p-2 d-flex justify-content-between">
-                    <div class="d-flex">
+                    <div class="d-flex align-items-center">
                         <img src="./assets/img/avatar_1.jpg" alt="" class="me-2">
                         <h6>nome utente</h6>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center">
                         <i class="fa-solid fa-magnifying-glass mx-2"></i>
                         <i class="fa-solid fa-paperclip mx-2"></i>
                         <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
                     </div>
                 </div>
-                <!-- BOTTOM chat -->
-                <div class="chat d-flex">
-                    <div class="sent_message m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
-                    <div class="sent_message m-2 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus exercitationem amet earum aliquid sequi. Magnam, eaque!</div>
-                    <div class="received_messsage m-2 p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                <!-- BOTTOM - chat -->
+                <div class="chat d-flex justify-content-between">
+                    <!-- chat -->
+                    <div class="chat d-flex">
+                        <div class="sent_message m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                        <div class="sent_message m-2 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Natus
+                            exercitationem amet earum aliquid sequi. Magnam, eaque!</div>
+                        <div class="received_messsage m-2 p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </div>
+                    </div>
+
+                    <!-- toolbar -->
+                    <div class="chat_toolbar d-flex justify-content-around align-items-center">
+                        <i class="fa-regular fa-face-smile mx-3"></i>
+                        <input type="text" class="write_input form-control m-2" placeholder="Scrivi un messaggio">
+                        <i class="fa-solid fa-microphone fa-lg mx-3"></i>
+                    </div>
                 </div>
             </section>
         </div>
