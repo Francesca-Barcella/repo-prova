@@ -35,13 +35,13 @@
                 <!-- side_bar bottom -->
                 <div class="side_bar_bottom">
                     <!-- notifications -->
-                    <div class="notifications d-flex p-2">
-                        <div class="desktop_notifications me-2">
+                    <div class="notifications d-flex align-items-center p-2">
+                        <div class="desktop_notifications me-3">
                             <i class="fa-solid fa-bell-slash"></i>
                         </div>
                         <div>
                             <div>Ricevi notifiche di nuovi messaggi</div>
-                            <a href="#">Attiva notifiche desktop</a>
+                            <a href="#" class="text-secondary">Attiva notifiche desktop</a>
                         </div>
                     </div>
                     <!-- search -->
@@ -59,10 +59,10 @@
                                 <img class="me-3" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                 <div class="contact_detalis">
                                     <h5>{{contact.name}}</h5>
-                                    <span>messaggio inviato</span>
+                                    <span class="color_text">messaggio inviato</span>
                                 </div>
                             </div>
-                            <span class="time_message">12:00</span>
+                            <span class="color_text">12:00</span>
                         </div>
                     </div>
                 </div>

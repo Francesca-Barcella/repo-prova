@@ -18,6 +18,10 @@ i {
     color: var(--boolz-primary);
 }
 
+.color_text{
+    color: var(--boolz-primary);
+}
+
 
 /* #endregion common */
 
