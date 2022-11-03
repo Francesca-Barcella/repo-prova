@@ -54,7 +54,7 @@
                     </div>
                     <!-- contacts -->
                     <div class="contacts">
-                        <div class="contact d-flex justify-content-between p-2" v-for="(contact, index) in contacts">
+                        <div class="contact d-flex justify-content-between p-2" v-for="(contact, index) in contacts" @click="changeActiveIndex">
                             <div class="avatar d-flex">
                                 <img class="me-3" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                 <div class="contact_detalis">
@@ -85,7 +85,7 @@
                 <!-- BOTTOM - chat -->
                 <div class="chat d-flex justify-content-between">
                     <!-- chat -->
-                    <div class="chat d-flex" v-for="(message, index) in contacts[activeMessage].messages">
+                    <div class="chat d-flex" v-for="(message, index) in contacts[activeIndex].messages">
                         <div class="m-2 p-2" :class="message.status === 'sent' ? 'sent_message' : 'received_messsage'">{{message.message}}</div>
                         
                     </div>

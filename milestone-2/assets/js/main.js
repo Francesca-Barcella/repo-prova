@@ -1,7 +1,7 @@
 /************************************ 
 MILESTONE 2 
 ************************************/
-const {createApp} = Vue
+const { createApp } = Vue
 
 createApp({
     data() {
@@ -23,7 +23,12 @@ createApp({
                             message: 'Ricordati di stendere i panni',
                             status: 'sent'
                         },
-                    
+                        {
+                            date: '10/01/2020 16:15:22',
+                            message: 'Tutto fatto!',
+                            status: 'received'
+                        }
+
                     ],
                 },
                 {
@@ -167,9 +172,17 @@ createApp({
                 }
             ],
 
-            activeMessage: 6,
+            activeIndex: 0,
 
         }
+    },
+
+    methods: {
+        changeActiveIndex(index) {
+            console.log('hai cliccato su un contatto'),
+            this.activeIndex = index
+        }
+
     },
 
 }).mount('#app');
