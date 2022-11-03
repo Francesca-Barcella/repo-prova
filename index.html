@@ -18,13 +18,13 @@
 
     <div id="app">
         <div class="boolzapp d-flex">
-            <!-- side_bar -->
+            <!-- contacts-area -->
             <section class="side_bar">
                 <!-- side_bar top -->
                 <div class="user p-2 d-flex justify-content-between">
                     <div class="d-flex">
-                        <img src="./assets/img/avatar_1.jpg" alt="">
-                        <div>nome utente</div>
+                        <img src="./assets/img/avatar_1.jpg" alt="" class="me-2">
+                        <h6>nome utente</h6>
                     </div>
                     <div>
                         <i class="fa-solid fa-circle-notch mx-2"></i>
@@ -34,7 +34,7 @@
                 </div>
                 <!-- side_bar bottom -->
                 <div class="side_bar_bottom">
-                    <!-- side_bar notifications -->
+                    <!-- notifications -->
                     <div class="notifications d-flex p-2">
                         <div class="desktop_notifications me-2">
                             <i class="fa-solid fa-bell-slash"></i>
@@ -44,7 +44,7 @@
                             <a href="#">Attiva notifiche desktop</a>
                         </div>
                     </div>
-                    <!-- side_bar search -->
+                    <!-- search -->
                     <div class="search">
                         <form class="d-flex" role="search">
                             <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -52,15 +52,15 @@
                                 aria-label="Search">
                         </form>
                     </div>
-                    <!-- side_bar contact -->
+                    <!-- contacts -->
                     <div class="contacts">
-                        <div class="contact d-flex p-2" v-for="(contact, i) in contacts">
-                            <div class="avatar">
+                        <div class="contact d-flex justify-content-between p-2" v-for="(contact, i) in contacts">
+                            <div class="avatar d-flex">
                                 <img class="me-3" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
-                            </div>
-                            <div class="contact_detalis">
-                                <h5>{{contact.name}}</h5>
-                                <span>messaggio inviato</span>
+                                <div class="contact_detalis">
+                                    <h5>{{contact.name}}</h5>
+                                    <span>messaggio inviato</span>
+                                </div>
                             </div>
                             <span class="time_message">12:00</span>
                         </div>
@@ -68,14 +68,13 @@
                 </div>
             </section>
 
-            <!-- messages_bar -->
+            <!-- messages area -->
             <section class="messages">
                 <!-- TOP - active contact -->
-                <div class="active_chat p-2 d-flex ">
-                    <img src="./assets/img/avatar_1.jpg" alt="">
-                    <div>
+                <div class="active_chat p-2 d-flex justify-content-between">
+                    <div class="d-flex">
+                        <img src="./assets/img/avatar_1.jpg" alt="" class="me-2">
                         <h6>nome utente</h6>
-                        <span>Ultimo accesso oggi alle</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-magnifying-glass mx-2"></i>
@@ -84,7 +83,7 @@
                     </div>
                 </div>
                 <!-- BOTTOM chat -->
-                <div class="messages_chat d-flex">
+                <div class="chat d-flex">
                     <div class="sent_message m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
                     <div class="sent_message m-2 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus exercitationem amet earum aliquid sequi. Magnam, eaque!</div>
                     <div class="received_messsage m-2 p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
