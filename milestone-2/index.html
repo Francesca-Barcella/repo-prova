@@ -86,7 +86,7 @@
                 <div class="chat d-flex justify-content-between">
                     <!-- chat -->
                     <div class="chat d-flex" v-for="(contact, index) in contacts[0].messages">
-                        <div class="m-2 p-2" :class="contacts[0].messages[0].status === 'sent' ? 'sent_message' : 'received_messsage'">{{contacts[0].messages[0].message}</div>
+                        <div class="m-2 p-2" :class="contacts[0].messages[0].status === 'sent' ? 'sent_message' : 'received_messsage'">{{contacts[0].messages[0].message}}</div>
                         <p>ci sono {{contacts[0].messages.length}} messaggi</p>
                     </div>
 
