@@ -124,6 +124,18 @@ i {
     background-image: url('../img/mine.jpg');
 }
 
+.sent_message{
+    width: calc(100% / 2 - 1rem);
+    background-color: var(--boolz-hope);
+    border-radius: 0.5rem;
+}
+
+.received_messsage{
+    width: calc(100% / 2 - 1rem);
+    background-color: var(--boolz-light);
+    border-radius: 0.5rem; 
+}
+
 /* #endregion messages */
 
 
