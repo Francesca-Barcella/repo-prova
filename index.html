@@ -51,17 +51,17 @@
                     </div>
                     <!-- side_bar contact -->
                     <div class="contacts">
-                        <div class="contact d-flex p-2">
-                            <div class="avatar"><img src="./assets/img/avatar_1.jpg" alt=""></div>
-                            <div class="contact_detalis">
-                                <div>nome</div>
-                                <div>messaggio inviato</div>
+                            <div class="contact d-flex p-2" v-for="(contact) in contacts">
+                                <div class="avatar">
+                                    <img src="./assets/img/avatar_1.jpg" alt="">
+                                </div>
+                                <div class="contact_detalis">
+                                    <div>{{contact.name}}</div>
+                                    <div>messaggio inviato</div>
+                                </div>
+                                <div class="time_message">12:00</div>
                             </div>
-                            <div class="time_message">12:00</div>
-                        </div>
                     </div>
-
-
                 </section>
             </div>
 
@@ -87,7 +87,7 @@
     </div>
 
 
-    <!--  <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script> -->
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
