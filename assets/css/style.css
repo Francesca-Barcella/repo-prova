@@ -51,14 +51,14 @@ i {
     margin-top: 5vh;
 }
 
-.side_bar_top,
-.messages_top {
+.user,
+.active_chat {
     height: 70px;
     background-color: var(--boolz-primary-light);
 }
 
 .side_bar_bottom,
-.messages_bottom {
+.messages_chat {
     height: calc(100% - 70px);
 }
 /* #endregion main */
@@ -66,11 +66,11 @@ i {
 /* #region side_bar */
 
 .side_bar {
-    width: 400px;
+    max-width: 400px;
     border-right: 1px solid var(--boolz-primary);
 }
 
-.side_bar img, .messages_top img {
+.side_bar img, .active_chat img {
     max-width: 50px;
     border-radius: 50%;
 }
@@ -120,7 +120,7 @@ i {
     width: calc(100% - 400px);
 }
 
-.messages_bottom {
+.messages_chat {
     background-image: url('../img/mine.jpg');
     flex-direction: column;
 }

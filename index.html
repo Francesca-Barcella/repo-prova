@@ -19,14 +19,13 @@
     <div id="app">
         <div class="boolzapp d-flex">
             <!-- side_bar -->
-            <div class="side_bar">
+            <section class="side_bar">
                 <!-- side_bar top -->
-                <div class="side_bar_top p-2 d-flex justify-content-between">
+                <div class="user p-2 d-flex justify-content-between">
                     <div class="d-flex">
                         <img src="./assets/img/avatar_1.jpg" alt="">
                         <div>nome utente</div>
                     </div>
-                    
                     <div>
                         <i class="fa-solid fa-circle-notch mx-2"></i>
                         <i class="fa-solid fa-message mx-2"></i>
@@ -34,7 +33,7 @@
                     </div>
                 </div>
                 <!-- side_bar bottom -->
-                <section class="side_bar_bottom">
+                <div class="side_bar_bottom">
                     <!-- side_bar notifications -->
                     <div class="notifications d-flex p-2">
                         <div class="desktop_notifications me-2">
@@ -56,7 +55,7 @@
                     <div class="contacts">
                         <div class="contact d-flex p-2" v-for="(contact, i) in contacts">
                             <div class="avatar">
-                                <img class="me-3" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="me-3" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                             </div>
                             <div class="contact_detalis">
                                 <h5>{{contact.name}}</h5>
@@ -65,13 +64,13 @@
                             <span class="time_message">12:00</span>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <!-- messages_bar -->
-            <div class="messages">
-                <!-- messages_top -->
-                <div class="messages_top p-2 d-flex ">
+            <section class="messages">
+                <!-- TOP - active contact -->
+                <div class="active_chat p-2 d-flex ">
                     <img src="./assets/img/avatar_1.jpg" alt="">
                     <div>
                         <h6>nome utente</h6>
@@ -83,13 +82,13 @@
                         <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
                     </div>
                 </div>
-                <!-- messages_bottom -->
-                <div class="messages_bottom d-flex">
+                <!-- BOTTOM chat -->
+                <div class="messages_chat d-flex">
                     <div class="sent_message m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
                     <div class="sent_message m-2 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus exercitationem amet earum aliquid sequi. Magnam, eaque!</div>
                     <div class="received_messsage m-2 p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
                 </div>
-            </div>
+            </section>
         </div>
 
     </div>
