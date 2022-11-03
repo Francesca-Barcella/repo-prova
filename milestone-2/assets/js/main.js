@@ -23,11 +23,7 @@ createApp({
                             message: 'Ricordati di stendere i panni',
                             status: 'sent'
                         },
-                        {
-                            date: '10/01/2020 16:15:22',
-                            message: 'Tutto fatto!',
-                            status: 'received'
-                        }
+                    
                     ],
                 },
                 {
@@ -169,7 +165,9 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+
+            activeMessage: 6,
 
         }
     },
