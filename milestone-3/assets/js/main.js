@@ -186,7 +186,15 @@ createApp({
             ],
 
             activeIndex: 0,
-            userMessage: '',
+            
+            //userMessage: '',
+
+            userMessage:{
+                message:'',
+                status: 'sent'
+            },
+
+            
         }
     },
 
@@ -195,12 +203,15 @@ createApp({
             this.activeIndex = index
         },
 
-        addUserMessage(index) {
-            console.log('hai premuto enter');
-            //qui dentro dovrò sviluppare la funzione che pusha il nuovo messaggio all'array essitente
-            this.contacts.messages.message.push(this.userMessage[activeIndex]),
-            this.contacts.messages.message.status = 'send',
-       
+
+
+        addUserMessage() {
+            console.log('hai premuto enter')
+            //console.log(this.contacts)
+            //console.log(this.userMessage)       
+            this.contacts.push(this.userMessage)
+            console.log(this.contacts)
+
         }
 
     },
