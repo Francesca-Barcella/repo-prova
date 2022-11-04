@@ -32,7 +32,7 @@
                         <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
                     </div>
                 </div>
-                <!-- side_bar bottom -->
+                <!-- side_bar bottom  CONTACTS-->
                 <div class="side_bar_bottom">
                     <!-- notifications -->
                     <div class="notifications d-flex align-items-center p-2">
@@ -87,16 +87,17 @@
                     <!-- chat -->
                     <div class="chat d-flex" v-for="(message, index) in contacts[activeIndex].messages">
                         <div class="m-2 p-2" :class="message.status === 'sent' ? 'sent_message' : 'received_messsage'">{{message.message}}</div>
-                        
+                        <!-- <div class="m-2 p-2" :class="message.status === 'sent' ? 'sent_message' : 'received_messsage'">prova stampa nuovo messaggio: {{userMessage}}</div> -->
                     </div>
 
                     <!-- toolbar -->
                     <div class="chat_toolbar d-flex justify-content-around align-items-center">
                         <i class="fa-regular fa-face-smile mx-3"></i>
-                        <input type="text" class="write_input form-control m-2" placeholder="Scrivi un messaggio">
+                        <input type="text" class="write_input form-control m-2" placeholder="Scrivi un messaggio" v-model="userMessage" @keyup.enter="addUserMessage">
                         <i class="fa-solid fa-microphone fa-lg mx-3"></i>
                     </div>
                 </div>
+
             </section>
         </div>
 

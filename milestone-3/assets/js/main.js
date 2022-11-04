@@ -6,7 +6,10 @@ MILESTONE 3
 ● #2 - Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà
 un “ok” come risposta, che apparirà dopo 1 secondo.
 
-- strumenti #1: v-model nell'input e key modifier(?) per tasto enter
+- strumenti #1: 
+    ● v-model nell'input + nomeProprietà:'', nell'istanza con stringa vuota che salva l'input e lo stampa dove io inserirò la proprietà
+    ● pushare l'input messageUser nell'array contacts -> messages -> message o aggiungerlo in un div nuovo?
+    ● key modifier(?) per tasto enter -> @keyup.enter="addmethods"
 - strumenti #2: setTimeOut (1 sola volta)
 
 ************************************/
@@ -14,8 +17,8 @@ const { createApp } = Vue
 
 createApp({
     data() {
-
         return {
+            
             contacts: [
                 {
                     name: 'Michele',
@@ -182,6 +185,7 @@ createApp({
             ],
 
             activeIndex: 0,
+            userMessage: '',
 
         }
     },
@@ -190,6 +194,10 @@ createApp({
         changeActiveIndex(index) {
             
             this.activeIndex = index
+        },
+
+        addUserMessage (){
+            console.log('hai premuto enter');
         }
 
     },
