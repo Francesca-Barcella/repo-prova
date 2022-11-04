@@ -87,7 +87,8 @@
                     <!-- chat -->
                     <div class="chat d-flex" v-for="(message, index) in contacts[activeIndex].messages">
                         <div class="m-2 p-2" :class="message.status === 'sent' ? 'sent_message' : 'received_messsage'">{{message.message}}</div>
-                        <!-- <div class="m-2 p-2" :class="message.status === 'sent' ? 'sent_message' : 'received_messsage'">prova stampa nuovo messaggio: {{userMessage}}</div> -->
+                        <div class="m-2 p-2" :class="message.status === 'sent' ? 'sent_message' : 'received_messsage'">prova stampa nuovo messaggio: {{userMessage}}</div>
+                        
                     </div>
 
                     <!-- toolbar -->
@@ -97,7 +98,6 @@
                         <i class="fa-solid fa-microphone fa-lg mx-3"></i>
                     </div>
                 </div>
-
             </section>
         </div>
 

@@ -18,7 +18,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            
+
             contacts: [
                 {
                     name: 'Michele',
@@ -186,18 +186,18 @@ createApp({
 
             activeIndex: 0,
             userMessage: '',
-
         }
     },
 
     methods: {
         changeActiveIndex(index) {
-            
             this.activeIndex = index
         },
 
-        addUserMessage (){
+        addUserMessage() {
             console.log('hai premuto enter');
+            //qui dentro dovrò sviluppare la funzione che pusha il nuovo messaggio all'array essitente
+       
         }
 
     },
