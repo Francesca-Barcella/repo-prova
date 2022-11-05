@@ -19,8 +19,6 @@ createApp({
     data() {
         return {
 
-            
-
             contacts: [
                 {
                     name: 'Michele',
@@ -186,15 +184,15 @@ createApp({
             ],
 
             activeIndex: 0,
-            
+
             //userMessage: '',
 
-            userMessage:{
-                message:'',
+            userMessage: {
+                message: '',
                 status: 'sent'
             },
 
-            
+
         }
     },
 
@@ -211,6 +209,8 @@ createApp({
             //console.log(this.userMessage)       
             this.contacts.push(this.userMessage)
             console.log(this.contacts)
+            //per togliere il testo dalla barra dopo enter
+            this.userMessage = ''
 
         }
 
